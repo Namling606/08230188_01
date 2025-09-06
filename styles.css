@@ -1,0 +1,153 @@
+body {
+    font-family: 'Open Sans';
+    background-color: #fff;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Top Navigation Bar */
+.topbar {
+    background: #5888b9;
+    color: #fff;
+    padding: 0.5em 10%;
+    width: 100%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Main Navigation */
+.main-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    padding: 1em 2em;
+    flex-wrap: wrap;
+}
+
+.logo {
+    height: 15vh;
+    margin-top: -3em;
+}
+
+.nav-section {
+    text-align: center;
+    padding: 1em;
+}
+
+.nav-section a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-section p {
+    font-size: 0.75em;
+    color: #555;
+    margin-top: 5px;
+}
+
+.btn-red {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 1em 2em 10%;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Programmes Banner */
+.programmes {
+    background-color: black;
+    color: white;
+    padding: 30px 10%;
+    font-weight: bold;
+    font-size: 2.5em
+}
+
+.breadcrumbs {
+    padding: 15px 10%;
+    background-color: #fff;
+    font-size: 0.95em;
+    color: #666;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.breadcrumbs a {
+    color: #666;
+    text-decoration: none;
+}
+
+/* Main Content */
+.content-section {
+    padding: 0 10%;
+     /* Forces natural vertical stacking */
+    width: 100%;
+}
+
+.content-section h2 {
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.content-section ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.content-section ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.content-section ul li::before {
+    content: '•';
+    color: #007bff;
+    font-size: 1.5em;
+    position: absolute;
+    left: 0;
+    top: -0.1em;
+}
+
+.content-section ul li a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.content-section ul li a:hover {
+    color: #0056b3;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .content-section {
+        padding: 20px 10%;
+    }
+}
